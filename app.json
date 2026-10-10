@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Avast Premium Luxury",
+    "slug": "avast-premium-luxury",
+    "scheme": "avastlux",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#06070B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.avastlux.premium",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Webcam Shield monitors camera access to block spyware.",
+        "NSPhotoLibraryUsageDescription": "Antivirus scans media folders for malware.",
+        "UIBackgroundModes": ["fetch", "processing", "remote-notification"],
+        "NSNetworkExtensionUsageDescription": "Web Shield VPN inspects links before they load."
+      }
+    },
+    "android": {
+      "package": "com.avastlux.premium",
+      "permissions": [
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_DATA_SYNC",
+        "RECEIVE_BOOT_COMPLETED",
+        "POST_NOTIFICATIONS",
+        "QUERY_ALL_PACKAGES",
+        "REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "CAMERA",
+        "BIND_ACCESSIBILITY_SERVICE",
+        "BIND_VPN_SERVICE"
+      ],
+      "adaptiveIcon": { "backgroundColor": "#06070B" },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [{ "scheme": "http" }, { "scheme": "https" }],
+          "category": ["BROWSABLE", "DEFAULT"]
+        },
+        {
+          "action": "SEND",
+          "data": [{ "mimeType": "text/plain" }],
+          "category": ["DEFAULT"]
+        }
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-background-fetch",
+        { "backgroundFetchEnabled": true }
+      ]
+    ],
+    "web": { "bundler": "metro", "output": "single" },
+    "experiments": { "typedRoutes": false }
+  }
+}

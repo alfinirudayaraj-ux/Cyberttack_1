@@ -1,0 +1,17 @@
+[2026-10-09 17:56:58] ==================================================
+[2026-10-09 17:56:58] ShieldLux Guardian for Windows STARTED (clipboard watch + toast popups).
+[2026-10-09 17:58:24] Test run complete (4 cycles). Exiting.
+[2026-10-09 18:03:57] ==================================================
+[2026-10-09 18:03:57] ShieldLux Guardian for Windows STARTING (clipboard watch + toast popups above all apps).
+[2026-10-09 18:03:57] Warming up clipboard reader (PowerShell first start can take ~20s)...
+[2026-10-09 18:04:10] Clipboard reader READY — watching in the background of every app.
+[2026-10-09 18:04:10] CLIPBOARD CHANGED: https://PayPalsecurity.com
+[2026-10-09 18:04:16] CHECK https://PayPalsecurity.com => SCAM (5.7s) via system clipboard
+[2026-10-09 18:04:16]     Offline engine: Uses PayPal's name but is NOT paypal.com — the real PayPal never operates from here
+[2026-10-09 18:04:16]     Live DNS: Resolves publicly (1 record)
+[2026-10-09 18:04:16]     Domain age (registry): Domain established 12.5 year(s)
+[2026-10-09 18:04:16]     Malware blocklist: Not on URLhaus malware list
+[2026-10-09 18:04:16]     Live page scan: Page content unreadable (JS-walled or blocked)
+[2026-10-09 18:04:16]     Concealment test: Brand alleged + no ownership proof + content hidden = fake scam
+[2026-10-09 18:04:16]     TOAST SENT: FAKE SCAM WEBSITE/LINK: wears PayPal's name with no ownership proof — the real PayPal never operates from here. This is a fake scam website, url and link. Enter
+[2026-10-09 18:04:16] Test run complete (1 checks). Shutting down.
